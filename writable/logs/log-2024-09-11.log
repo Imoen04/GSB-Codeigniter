@@ -1,0 +1,78 @@
+CRITICAL - 2024-09-11 14:34:23 --> syntax error, unexpected variable "$Modele"
+in APPPATH\Controllers\Controleur.php on line 117.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\codeigniter4-v4.4.0\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-11 14:35:35 --> syntax error, unexpected variable "$Modele"
+in APPPATH\Controllers\Controleur.php on line 117.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\codeigniter4-v4.4.0\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-11 14:35:36 --> syntax error, unexpected variable "$Modele"
+in APPPATH\Controllers\Controleur.php on line 117.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\codeigniter4-v4.4.0\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-11 14:42:56 --> syntax error, unexpected variable "$resultat"
+in APPPATH\Models\Modele.php on line 142.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\codeigniter4-v4.4.0\\app\\Models\\Modele.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Modele')
+ 3 APPPATH\Controllers\Controleur.php(117): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Modele')
+ 4 APPPATH\Controllers\Controleur.php(39): App\Controllers\Controleur->redirectionVisiteurAccueile()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-11 14:43:46 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Controllers\Controleur.php on line 126.
+ 1 APPPATH\Controllers\Controleur.php(126): count(Object(stdClass))
+ 2 APPPATH\Controllers\Controleur.php(39): App\Controllers\Controleur->redirectionVisiteurAccueile()
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-11 14:45:07 --> count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+in APPPATH\Controllers\Controleur.php on line 126.
+ 1 APPPATH\Controllers\Controleur.php(126): count(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 APPPATH\Controllers\Controleur.php(39): App\Controllers\Controleur->redirectionVisiteurAccueile()
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-11 14:47:34 --> count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+in APPPATH\Controllers\Controleur.php on line 126.
+ 1 APPPATH\Controllers\Controleur.php(126): count(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 APPPATH\Controllers\Controleur.php(39): App\Controllers\Controleur->redirectionVisiteurAccueile()
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-11 21:51:20 --> Object of class App\Models\Modele could not be converted to string
+in APPPATH\Controllers\Controleur.php on line 142.
+ 1 APPPATH\Controllers\Controleur.php(39): App\Controllers\Controleur->redirectionVisiteurAccueile()
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-11 21:53:13 --> CodeIgniter\Database\BaseConnection::query(): Argument #3 ($setEscapeFlags) must be of type bool, array given, called in C:\wamp64\www\codeigniter4-v4.4.0\app\Models\Modele.php on line 33
+in SYSTEMPATH\Database\BaseConnection.php on line 569.
+ 1 APPPATH\Models\Modele.php(33): CodeIgniter\Database\BaseConnection->query('INSERT INTO fichefrais (idVisiteur, mois, nbJustificatifs, montantValide, dateModif, idEtat) 
+ VALUES (\'a55\', \'202409\', 0, 0, \'2024-09-11\', \'CR\')', [...], [...])
+ 2 APPPATH\Controllers\Controleur.php(138): App\Models\Modele->creationFicheBase('a55', '202409')
+ 3 APPPATH\Controllers\Controleur.php(39): App\Controllers\Controleur->redirectionVisiteurAccueile()
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

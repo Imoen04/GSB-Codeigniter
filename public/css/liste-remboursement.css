@@ -1,0 +1,167 @@
+.reimbursement-list-page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #23332a;
+    background:
+        radial-gradient(ellipse at 86% 20%, rgba(216, 236, 218, 0.62), transparent 34rem),
+        #f5f8f5;
+}
+
+.reimbursement-list-page .login-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    padding: 58px 20px 96px;
+}
+
+.reimbursement-list-page .login-card.table-card {
+    width: min(100%, 1000px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 34px 38px 30px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #e1ebe2;
+    border-radius: 18px;
+    box-shadow: 0 18px 48px rgba(29, 72, 39, 0.09);
+}
+
+.reimbursement-list-page .table-card h2 {
+    margin-bottom: 24px;
+    color: #183d26;
+    font-size: clamp(26px, 4vw, 34px);
+    letter-spacing: -0.6px;
+}
+
+.reimbursement-list-page .table-responsive {
+    overflow-x: auto;
+    border: 1px solid #e1ebe2;
+    border-radius: 12px;
+}
+
+.reimbursement-list-page table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.reimbursement-list-page th,
+.reimbursement-list-page td {
+    padding: 15px 18px;
+    border: 0;
+    border-bottom: 1px solid #e9f0e9;
+    text-align: left;
+}
+
+.reimbursement-list-page th {
+    color: #31593a;
+    background: #edf6ee;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+}
+
+.reimbursement-list-page td {
+    color: #46564a;
+    font-size: 14px;
+}
+
+.reimbursement-list-page tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.reimbursement-list-page tbody tr:hover {
+    background: #f7fbf7;
+}
+
+.reimbursement-list-page .empty-message {
+    padding: 16px 18px;
+    color: #31593a;
+    background: #edf6ee;
+    border: 1px solid #d5e7d7;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.reimbursement-list-page .profile-actions {
+    display: flex;
+    margin: 24px 0 0;
+    padding: 0;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.reimbursement-list-page .profile-actions .btn {
+    display: inline-flex;
+    min-height: 46px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    color: #2e7d32;
+    background: #fff;
+    border: 1px solid #cfe1d1;
+    border-radius: 9px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.reimbursement-list-page .profile-actions .btn:first-child {
+    color: #fff;
+    background: #2e7d32;
+    border-color: #2e7d32;
+    box-shadow: 0 6px 14px rgba(46, 125, 50, 0.18);
+}
+
+.reimbursement-list-page .profile-actions .btn:hover {
+    background: #f0f7f0;
+    transform: translateY(-1px);
+}
+
+.reimbursement-list-page .profile-actions .btn:first-child:hover {
+    background: #256b2a;
+}
+
+.reimbursement-list-page .profile-actions .btn:focus-visible {
+    outline: 3px solid #8fc897;
+    outline-offset: 3px;
+}
+
+.reimbursement-list-page footer {
+    margin-top: auto;
+}
+
+@media (max-width: 640px) {
+    .reimbursement-list-page .login-section {
+        padding: 38px 16px 76px;
+    }
+
+    .reimbursement-list-page .login-card.table-card {
+        padding: 25px 20px 22px;
+        border-radius: 14px;
+    }
+
+    .reimbursement-list-page th,
+    .reimbursement-list-page td {
+        padding: 12px 14px;
+    }
+
+    .reimbursement-list-page .profile-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .reimbursement-list-page .profile-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reimbursement-list-page .profile-actions .btn {
+        transition: none;
+    }
+}

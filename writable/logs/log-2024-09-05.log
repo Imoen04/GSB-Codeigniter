@@ -1,0 +1,267 @@
+ERROR - 2024-09-05 08:51:06 --> mysqli_sql_exception: Table 'gsbv2.t_billet' doesn't exist in C:\wamp64\www\codeigniter4-v4.4.0\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\codeigniter4-v4.4.0\system\Database\MySQLi\Connection.php(306): mysqli->query('select BIL_ID, ...', 0)
+#1 C:\wamp64\www\codeigniter4-v4.4.0\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select BIL_ID, ...')
+#2 C:\wamp64\www\codeigniter4-v4.4.0\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select BIL_ID, ...')
+#3 C:\wamp64\www\codeigniter4-v4.4.0\app\Models\Modele.php(38): CodeIgniter\Database\BaseConnection->query('select BIL_ID, ...')
+#4 C:\wamp64\www\codeigniter4-v4.4.0\app\Controllers\Controleur.php(56): App\Models\Modele->getBillets()
+#5 C:\wamp64\www\codeigniter4-v4.4.0\app\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+#6 C:\wamp64\www\codeigniter4-v4.4.0\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\codeigniter4-v4.4.0\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\codeigniter4-v4.4.0\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\codeigniter4-v4.4.0\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 08:51:06 --> Table 'gsbv2.t_billet' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Modele.php(38): CodeIgniter\Database\BaseConnection->query('select BIL_ID, BIL_TITRE, BIL_DATE from T_BILLET order by BIL_ID desc')
+ 2 APPPATH\Controllers\Controleur.php(56): App\Models\Modele->getBillets()
+ 3 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-05 09:23:32 --> mysqli_sql_exception: Table 'gsbv2.t_billet' doesn't exist in C:\wamp64\www\codeigniter4-v4.4.0\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\codeigniter4-v4.4.0\system\Database\MySQLi\Connection.php(306): mysqli->query('select BIL_ID, ...', 0)
+#1 C:\wamp64\www\codeigniter4-v4.4.0\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select BIL_ID, ...')
+#2 C:\wamp64\www\codeigniter4-v4.4.0\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select BIL_ID, ...')
+#3 C:\wamp64\www\codeigniter4-v4.4.0\app\Models\Modele.php(38): CodeIgniter\Database\BaseConnection->query('select BIL_ID, ...')
+#4 C:\wamp64\www\codeigniter4-v4.4.0\app\Controllers\Controleur.php(56): App\Models\Modele->getBillets()
+#5 C:\wamp64\www\codeigniter4-v4.4.0\app\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+#6 C:\wamp64\www\codeigniter4-v4.4.0\system\CodeIgniter.php(915): App\Controllers\Controleur->index()
+#7 C:\wamp64\www\codeigniter4-v4.4.0\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+#8 C:\wamp64\www\codeigniter4-v4.4.0\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\codeigniter4-v4.4.0\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-05 09:23:32 --> Table 'gsbv2.t_billet' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Modele.php(38): CodeIgniter\Database\BaseConnection->query('select BIL_ID, BIL_TITRE, BIL_DATE from T_BILLET order by BIL_ID desc')
+ 2 APPPATH\Controllers\Controleur.php(56): App\Models\Modele->getBillets()
+ 3 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:25:55 --> Undefined property: stdClass::$BIL_TITRE
+in APPPATH\Views\vueAccueil.php on line 37.
+ 1 APPPATH\Views\vueAccueil.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$BIL_TITRE', 'C:\\wamp64\\www\\codeigniter4-v4.4.0\\app\\Views\\vueAccueil.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\codeigniter4-v4.4.0\\app\\Views\\vueAccueil.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vueAccueil', [], true)
+ 5 APPPATH\Controllers\Controleur.php(69): view('vueAccueil', [...])
+ 6 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:27:54 --> Undefined property: stdClass::$BIL_ID
+in APPPATH\Views\vueAccueil.php on line 71.
+ 1 APPPATH\Views\vueAccueil.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$BIL_ID', 'C:\\wamp64\\www\\codeigniter4-v4.4.0\\app\\Views\\vueAccueil.php', 71)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\codeigniter4-v4.4.0\\app\\Views\\vueAccueil.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vueAccueil', [], true)
+ 5 APPPATH\Controllers\Controleur.php(69): view('vueAccueil', [...])
+ 6 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:40:37 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:43:13 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:43:15 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:43:23 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:43:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:44:02 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:44:02 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:44:23 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:45:40 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 09:45:41 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Controleur.php(56): CodeIgniter\Model->__call('getBillets', [])
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:08:17 --> syntax error, unexpected identifier "base_url", expecting "," or ";"
+in APPPATH\Views\vueAccueil.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vueAccueil', [], true)
+ 3 APPPATH\Controllers\Controleur.php(69): view('vueAccueil')
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:11:51 --> syntax error, unexpected identifier "url", expecting "," or ";"
+in APPPATH\Views\vueAccueil.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vueAccueil', [], true)
+ 3 APPPATH\Controllers\Controleur.php(69): view('vueAccueil')
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:11:52 --> syntax error, unexpected identifier "url", expecting "," or ";"
+in APPPATH\Views\vueAccueil.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vueAccueil', [], true)
+ 3 APPPATH\Controllers\Controleur.php(69): view('vueAccueil')
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 10:13:56 --> syntax error, unexpected token "public"
+in APPPATH\Views\vueAccueil.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vueAccueil', [], true)
+ 3 APPPATH\Controllers\Controleur.php(69): view('vueAccueil')
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:33:58 --> syntax error, unexpected identifier "Controleur", expecting "," or ";"
+in APPPATH\Views\vueAccueil.php on line 27.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('vueAccueil', [], true)
+ 3 APPPATH\Controllers\Controleur.php(69): view('vueAccueil')
+ 4 APPPATH\Controllers\Controleur.php(33): App\Controllers\Controleur->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 12:58:09 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Controleur.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\codeigniter4-v4.4.0\\app\\Controllers\\Controleur.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Controleur')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Controleur')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Controleur', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 13:07:23 --> Invalid file: "page_de_connexionComptable.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page_de_connexionComptable.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('page_de_connexionComptable', [], true)
+ 3 APPPATH\Controllers\Controleur.php(79): view('page_de_connexionComptable')
+ 4 APPPATH\Controllers\Controleur.php(24): App\Controllers\Controleur->redirectionComptable()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 15:09:50 --> Invalid file: "consulterFiche.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('consulterFiche.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('consulterFiche', [], true)
+ 3 APPPATH\Controllers\Controleur.php(108): view('consulterFiche')
+ 4 APPPATH\Controllers\Controleur.php(30): App\Controllers\Controleur->redirectionConsulterFiche()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 15:11:51 --> Invalid file: "consulterFiche.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('consulterFiche.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('consulterFiche', [], true)
+ 3 APPPATH\Controllers\Controleur.php(108): view('consulterFiche')
+ 4 APPPATH\Controllers\Controleur.php(30): App\Controllers\Controleur->redirectionConsulterFiche()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-05 15:11:58 --> Invalid file: "consulterFiche.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('consulterFiche.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('consulterFiche', [], true)
+ 3 APPPATH\Controllers\Controleur.php(108): view('consulterFiche')
+ 4 APPPATH\Controllers\Controleur.php(30): App\Controllers\Controleur->redirectionConsulterFiche()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Controleur->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controleur))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

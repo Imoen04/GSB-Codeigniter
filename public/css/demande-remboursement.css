@@ -1,0 +1,245 @@
+.page-remboursement {
+    min-height: 100vh;
+    color: #23332a;
+    background:
+        radial-gradient(ellipse at 86% 20%, rgba(216, 236, 218, 0.62), transparent 34rem),
+        #f5f8f5;
+}
+
+.contenu-remboursement {
+    flex: 1;
+    width: min(820px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 58px 0 76px;
+}
+
+.introduction-remboursement {
+    margin: 0 auto 30px;
+}
+
+.surtitre-remboursement {
+    display: inline-flex;
+    margin-bottom: 12px;
+    align-items: center;
+    gap: 8px;
+    color: #32783d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.surtitre-remboursement::before {
+    width: 20px;
+    height: 2px;
+    background: #61a36a;
+    content: "";
+}
+
+.introduction-remboursement h1 {
+    margin-bottom: 12px;
+    color: #183d26;
+    font-size: clamp(30px, 4vw, 42px);
+    letter-spacing: -1.2px;
+    line-height: 1.15;
+}
+
+.introduction-remboursement p {
+    max-width: 650px;
+    color: #65756a;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.carte-remboursement {
+    padding: 34px 38px 30px;
+    background: #fff;
+    border: 1px solid #e1ebe2;
+    border-radius: 18px;
+    box-shadow: 0 18px 48px rgba(29, 72, 39, 0.09);
+}
+
+.entete-carte {
+    display: flex;
+    margin-bottom: 27px;
+    align-items: center;
+    gap: 14px;
+}
+
+.icone-entete {
+    display: grid;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    color: #2e7d32;
+    font-size: 25px;
+    background: #edf6ee;
+    border-radius: 13px;
+}
+
+.entete-carte h2 {
+    margin-bottom: 4px;
+    color: #24452d;
+    font-size: 19px;
+}
+
+.entete-carte p {
+    color: #77847a;
+    font-size: 13px;
+}
+
+.carte-remboursement .dashboard-message {
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.champs-frais {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 18px;
+}
+
+.champ-frais label {
+    display: flex;
+    min-height: 22px;
+    margin-bottom: 9px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    color: #34483a;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.tarif-frais {
+    color: #63816a;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.champ-frais input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 14px;
+    color: #25372a;
+    background: #fbfcfb;
+    border: 1px solid #dce6dd;
+    border-radius: 9px;
+    font-size: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.champ-frais input:hover {
+    border-color: #b7cfba;
+}
+
+.champ-frais input:focus {
+    outline: none;
+    background: #fff;
+    border-color: #4b9656;
+    box-shadow: 0 0 0 3px rgba(58, 135, 69, 0.14);
+}
+
+.date-frais {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 9px);
+}
+
+.actions-formulaire {
+    display: flex;
+    margin-top: 28px;
+    padding-top: 22px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    border-top: 1px solid #edf1ed;
+}
+
+.actions-formulaire p {
+    color: #78857b;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.carte-remboursement .btn {
+    display: inline-flex;
+    min-height: 48px;
+    padding: 0 22px;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    color: #fff;
+    background: linear-gradient(135deg, #28733a, #3c914d);
+    border-radius: 9px;
+    box-shadow: 0 7px 16px rgba(46, 125, 50, 0.2);
+    font-size: 14px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.carte-remboursement .btn:hover {
+    background: linear-gradient(135deg, #236832, #348445);
+    box-shadow: 0 10px 20px rgba(46, 125, 50, 0.25);
+    transform: translateY(-1px);
+}
+
+.carte-remboursement .btn:focus-visible,
+.contenu-remboursement a:focus-visible {
+    outline: 3px solid #8fc897;
+    outline-offset: 3px;
+}
+
+.pied-remboursement {
+    padding: 22px 20px;
+    color: #d9e8dc;
+    background: #2e7d32;
+    text-align: center;
+}
+
+.pied-remboursement p {
+    font-size: 12px;
+}
+
+@media (max-width: 640px) {
+    .contenu-remboursement {
+        width: calc(100% - 32px);
+        padding: 42px 0 56px;
+    }
+
+    .introduction-remboursement h1 {
+        font-size: 32px;
+    }
+
+    .carte-remboursement {
+        padding: 25px 20px 22px;
+        border-radius: 14px;
+    }
+
+    .champs-frais {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .date-frais {
+        max-width: none;
+        grid-column: auto;
+    }
+
+    .actions-formulaire {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .carte-remboursement .btn {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .champ-frais input,
+    .carte-remboursement .btn {
+        transition: none;
+    }
+}
